@@ -1,0 +1,14 @@
+C:\Users\Vongai\source\repos\project2b\bin\Debug\net8.0\project2b.exe
+C:\Users\Vongai\source\repos\project2b\bin\Debug\net8.0\project2b.deps.json
+C:\Users\Vongai\source\repos\project2b\bin\Debug\net8.0\project2b.runtimeconfig.json
+C:\Users\Vongai\source\repos\project2b\bin\Debug\net8.0\project2b.dll
+C:\Users\Vongai\source\repos\project2b\bin\Debug\net8.0\project2b.pdb
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.AssemblyInfoInputs.cache
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.AssemblyInfo.cs
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.csproj.CoreCompileInputs.cache
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.dll
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\refint\project2b.dll
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.pdb
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\project2b.genruntimeconfig.cache
+C:\Users\Vongai\source\repos\project2b\obj\Debug\net8.0\ref\project2b.dll
