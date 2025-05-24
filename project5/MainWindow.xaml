@@ -1,0 +1,62 @@
+﻿<Window x:Class="project4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Course Manager" Height="450" Width="800">
+
+    <!-- InputBindings for Ctrl+C -->
+    <Window.InputBindings>
+        <KeyBinding Command="Copy" Modifiers="Control" Key="C"/>
+    </Window.InputBindings>
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="Students">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Add" Click="AddStudent_Click" Margin="5"/>
+                        <Button Content="Remove" Click="RemoveStudent_Click" Margin="5"/>
+                    </StackPanel>
+                    <ListView x:Name="StudentList" Grid.Row="1"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Teachers">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Add" Click="AddTeacher_Click" Margin="5"/>
+                        <Button Content="Remove" Click="RemoveTeacher_Click" Margin="5"/>
+                    </StackPanel>
+                    <ListView x:Name="TeacherList" Grid.Row="1"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Courses">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="Add" Click="AddCourse_Click" Margin="5"/>
+                    <ListView x:Name="CourseList" Grid.Row="1" MouseDoubleClick="EditCourse_DoubleClick">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <TextBlock Text="{Binding Name}" DockPanel.Dock="Left" Margin="5"/>
+                                    <Button Content="Remove" DockPanel.Dock="Right" Click="RemoveCourse_Click" Margin="5"/>
+                                </DockPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
